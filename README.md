@@ -20,7 +20,7 @@ Inside each company, not everyone should see everything. I've designed two level
 * **The Team Member (User):** Can only see the tasks they need to work on today. This keeps the workspace clean and secure.
 
 ## 🚀 Why I chose this design
-As a beginner, I wanted to focus on **Security First**. Before I write a single line of complex code, I want to ensure the architecture is safe for the users. I plan to build this using **Node.js** and **PostgreSQL** because they are industry standards for handling this kind of data isolation.
+I chose this specific design becouse, in my view,Security isnt an 'add-on' its the foundation. i wanted to focus on **Security First**. Before I write a single line of complex code, I want to ensure the architecture is safe for the users. I plan to build this using **Node.js** and **PostgreSQL** because they are industry standards for handling this kind of data isolation.
 
 ---
 *“I believe great software isn't just about code, but about protecting the people who use it.”*
