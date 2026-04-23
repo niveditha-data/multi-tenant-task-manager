@@ -1,25 +1,27 @@
 # Multi-Tenant Task Management System
 
-## 🚀 Project Concept
-This is a conceptual design for a scalable task management system that supports multiple organizations (tenants) on a single platform while ensuring high security and data isolation.
+# 🎯 My Approach: The "Safe-Share" Task System
+*Internship Application - Center for Digital Infrastructure*
 
-## 🛠️ Key Architectural Pillars
+## 💡 The Problem I'm Solving
+When multiple companies use the same software, the biggest risk is "Privacy Leaks." If Company A is using this system to manage secret projects, they should never even know that Company B exists on the same platform. 
 
-### 1. Multi-Tenancy & Data Isolation
-To ensure that "Organization A" can never see "Organization B's" tasks, I have designed the system using **Logical Isolation**. 
-* Every table in the database will include a `tenant_id`.
-* When a user logs in, the system identifies their `tenant_id` and automatically filters all database queries.
+## 🏗️ How I've Built the Logic
+I approached this by thinking about a **Private Apartment Building**. Even though everyone shares the same roof (the software), every tenant has their own locked door.
 
-### 2. Role-Based Access Control (RBAC)
-The system manages permissions through specific roles:
-* **Admin:** Can create, edit, and delete all tasks within their own organization.
-* **User:** Can only view and manage tasks specifically assigned to them.
+### 1. The "Digital Lock" (Data Isolation)
+In my design, every single task in the database is "stamped" with a **Tenant ID**. 
+* **The Rule:** The system is programmed to only show data that matches the user's specific stamp. 
+* **Example:** If I log in as a user from "Kerala Tech," the system automatically hides everything that doesn't have the "Kerala Tech" ID.
 
-## 📈 Planned Tech Stack
-As I progress in my learning journey, I plan to build this using:
-* **Frontend:** React.js (for a responsive user interface).
-* **Backend:** Node.js with Express (to handle API logic).
-* **Database:** PostgreSQL (to manage relational data and tenant isolation).
+### 2. Who is in Charge? (Roles)
+Inside each company, not everyone should see everything. I've designed two levels:
+* **The Manager (Admin):** Can see the whole team's progress.
+* **The Team Member (User):** Can only see the tasks they need to work on today. This keeps the workspace clean and secure.
+
+## 🚀 Why I chose this design
+As a beginner, I wanted to focus on **Security First**. Before I write a single line of complex code, I want to ensure the architecture is safe for the users. I plan to build this using **Node.js** and **PostgreSQL** because they are industry standards for handling this kind of data isolation.
 
 ---
-*Developed by Niveditha as part of the Centre for Digital Infrastructure Internship Application.*
+*“I believe great software isn't just about code, but about protecting the people who use it.”*
+
